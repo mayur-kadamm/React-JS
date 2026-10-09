@@ -6,7 +6,7 @@ const Card = (props) => {
       <div className="card">
        <div className="top">
           <div className="left">
-            <img src="https://images.icon-icons.com/1195/PNG/512/1490889698-amazon_82521.png" alt="" />
+            <img src={props.logo} alt="" />
           </div>
 
           <div className="right">
@@ -15,20 +15,20 @@ const Card = (props) => {
         </div>
           
         <div className="center">
-          <h2>Amazon <span>5 Days Ago</span></h2>
-          <h1>Senior UI/UX Designer</h1>
-          <button>Part Time</button>
-          <button>Senior Level</button> 
+          <h2>{props.companyName} <span>{props.ago}</span></h2>
+          <h1>{props.jobPosition}</h1>
+          <button>{props.tag01}</button>
+          <button>{props.tag02}</button> 
           
-        </div>
+        </div> 
        <hr />
         <div className="bottom">
       
             <div className="left">
-              <h2>&#36;120</h2>
-              <p>Mubai, India</p>
+              <h2>{props.amount}</h2>
+              <p>{props.place}</p>
             </div>
-            <div className="right"><button>Applu now</button></div>
+            <div className="right"><button>Apply now</button></div>
         </div>
       
 
